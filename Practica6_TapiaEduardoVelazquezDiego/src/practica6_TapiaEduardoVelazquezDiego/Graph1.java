@@ -1,4 +1,4 @@
-package practica6_tapiaeduardo;
+package practica6_TapiaEduardoVelazquezDiego;
 import java.util.Iterator; 
 import java.util.LinkedList;
 
@@ -24,5 +24,12 @@ public class Graph1 {
         }
         System.out.println("\n");
         }
-    } 
+    }
+    void imprimirVectores(){
+        System.out.println("Los vectores disponibles son:");
+        for (int i = 0; i < V; i++) {
+            System.out.print("["+ i + "]");
+        }
+        System.out.println("\n");
+    }
 }

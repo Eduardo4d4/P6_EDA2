@@ -1,9 +1,9 @@
-package practica6_tapiaeduardo;
+package practica6_TapiaEduardoVelazquezDiego;
 
 import java.util.Scanner;
 
 
-public class Practica6_TapiaEduardoVelazquezDiego {
+public class practica6_TapiaEduardoVelazquezDiego {
     public static void main(String[] args) { 
         System.out.println("*** CREACION DE GRAFOS ***");
         System.out.println("INDIQUE EL TIPO DE GRAFO QUE REALIZARA"
@@ -31,6 +31,7 @@ public class Practica6_TapiaEduardoVelazquezDiego {
         System.out.println("Ingrese el numero de vertices");
         int v= lectura();
         Graph2 graph2 = new Graph2(v);
+        graph2.imprimirVectores();
         for (int i = 0; i < v; i++) {
             System.out.println("Cuantas arisrtas quiere para el vertice " + i);
             int aristas = lectura();
@@ -53,6 +54,7 @@ public class Practica6_TapiaEduardoVelazquezDiego {
         System.out.println("Ingrese el numero de vertices");
         int v= lectura();
         Graph1 graph = new Graph1(v);
+        graph.imprimirVectores();
         for (int i = 0; i < v; i++) {
             System.out.println("Cuantas arisrtas quiere para el vertice " + i);
             int aristas = lectura();
