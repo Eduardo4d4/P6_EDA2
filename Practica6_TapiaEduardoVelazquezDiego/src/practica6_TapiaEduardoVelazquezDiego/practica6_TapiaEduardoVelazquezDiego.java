@@ -49,6 +49,8 @@ public class practica6_TapiaEduardoVelazquezDiego {
             }
         }
         graph2.printGraph2(graph2);
+        
+        
     }
     private static void grafo1(){
         System.out.println("Ingrese el numero de vertices");
@@ -67,10 +69,13 @@ public class practica6_TapiaEduardoVelazquezDiego {
                     vert = lectura();
                 }
                 
-                graph.addEdge(i, vert); 
+                graph.addEdge(i, vert);
+                graph.matriz[i][vert] = 1;
             }
         }
         graph.printGraph(graph);
+        System.out.println("Matriz de adyacenia");
+        graph.matrizDeAdyacencia(graph, v);
     }
     public static int lectura(){
         Scanner sc = new Scanner(System.in);
