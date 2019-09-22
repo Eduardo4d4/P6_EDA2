@@ -74,8 +74,12 @@ public class practica6_TapiaEduardoVelazquezDiego {
             }
         }
         graph.printGraph(graph);
-        System.out.println("Matriz de adyacenia");
+        System.out.println("****Matriz de adyacenia****");
         graph.matrizDeAdyacencia(graph, v);
+        
+        System.out.println("****Breadth First search****");
+        graph.imprimirVectores();
+        graph.BFS(0);
     }
     public static int lectura(){
         Scanner sc = new Scanner(System.in);
